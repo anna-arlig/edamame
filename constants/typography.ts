@@ -4,7 +4,7 @@ import colors from './colors'
 
 export const HeaderText = styled(Text)`
   font-size: 24px;
-  font-family: 'Quicksand-Regular';
+  font-family: 'Quicksand-Light';
   color: ${colors.primary.dark_green};
   `
 
