@@ -1,24 +1,21 @@
 import React, { FC } from 'react'
 import * as S from './styled'
 import { RecipeCardTitle } from '../../constants/typography'
-import { useRecipes } from '../../hooks/useRecipes'
-import { View } from 'react-native/Libraries/Components/View/View'
-import Spacer from 'react-styled-spacer/dist/Spacer'
+import { Recipe } from '../../hooks/useRecipes'
 
-type Props = {}
+type Props = {
+  recipe: Recipe[]
+}
 
-const Header: FC<Props> = () => {
-  const recipes = useRecipes()
-
+const RecipeCard: FC<Props> = recipe => {
   return (
     <S.RecipeCardContainer>
-      <S.Background source={{ uri: `${recipes.dinnerRecipe.imgSmall}` }} />
-      <Spacer h={10} />
+      <S.Background source={{ uri: `${recipe.imgSmall}` }} />
       <S.RecipeCardTitleContainer>
-        <RecipeCardTitle numberOfLines={2}>{recipes.dinnerRecipe.recipeName}</RecipeCardTitle>
+        <RecipeCardTitle numberOfLines={2}>{recipe.recipeName}</RecipeCardTitle>
       </S.RecipeCardTitleContainer>
     </S.RecipeCardContainer>
   )
 }
 
-export default Header
+export default RecipeCard

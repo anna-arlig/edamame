@@ -9,6 +9,7 @@ export const HeaderText = styled(Text)`
   `
 
 export const Headline = styled(Text)`
+  padding: 10px;
   font-size: 18px;
   font-family: 'Quicksand';
   color: ${colors.primary.dark_green};
