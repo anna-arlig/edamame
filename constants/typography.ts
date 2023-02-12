@@ -25,6 +25,7 @@ export const RecipeCategoryTitle = styled(Text)`
   font-family: 'Quicksand';
   color: ${colors.primary.dark_green};
   text-transform: uppercase;
+  text-align: center;
   `
 
 export const ChipTitle = styled(Text)`
@@ -38,6 +39,7 @@ export const RecipeCardTitle = styled(Text)`
   font-size: 12px;
   font-family: 'Quicksand';
   color: ${colors.primary.dark_green};
+  text-align: center;
 `
 
 

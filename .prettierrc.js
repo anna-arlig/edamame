@@ -1,7 +1,20 @@
 module.exports = {
-  arrowParens: 'avoid',
-  bracketSameLine: true,
-  bracketSpacing: false,
+  arrowParens: "avoid",
+  bracketSpacing: true,
+  cursorOffset: -1,
+  embeddedLanguageFormatting: "auto",
+  endOfLine: "lf",
+  htmlWhitespaceSensitivity: "css",
+  insertPragma: false,
+  jsxBracketSameLine: false,
+  jsxSingleQuote: false,
+  printWidth: 100,
+  proseWrap: "preserve",
+  quoteProps: "as-needed",
+  requirePragma: false,
+  semi: false,
   singleQuote: true,
-  trailingComma: 'all',
-};
+  tabWidth: 2,
+  trailingComma: "es5",
+  useTabs: false
+}
