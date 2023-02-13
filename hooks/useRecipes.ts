@@ -3,9 +3,6 @@ import axios from 'axios'
 
 
 
-const BASE_URL = 'https://api.edamam.com/api/recipes/v2'
-const API_ID = 'fdded359'
-const API_KEY = 'be59c522dfa77fc7400675f3a290b192'
 
 
 
