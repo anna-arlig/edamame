@@ -23,7 +23,6 @@ export const Background = styled.ImageBackground`
 
 export const RecipeCardTitleContainer = styled.View`
 height: 49px;
-width: 145px;
 justify-content: center;
 align-items: center;
 `
