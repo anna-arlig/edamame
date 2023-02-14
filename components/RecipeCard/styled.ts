@@ -14,7 +14,7 @@ export const RecipeCardContainer = styled.TouchableOpacity`
 export const Background = styled.ImageBackground`
   height: 125px;
   position: absolute;
-  background-size: cover;
+  background-size: contain;
   top: 0;
   bottom: 0;
   left: 0;

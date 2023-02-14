@@ -5,17 +5,20 @@ export const HomeContainer = styled.ScrollView`
 
 `
 
-export const RecipeContainer = styled.View`
-  position: relative;
-  justify-content: flex-end;
+export const RecipeContainer = styled.ScrollView`
+
 `
 
-
+export const TitleContainer = styled.View`
+height: 49px;
+padding: 5px;
+justify-content: center;
+align-items: center;
+`
 
 export const Background = styled.ImageBackground`
-  height: 295px;
-  position: absolute;
-  background-size: cover;
+  height: 320px;
+  background-size: 100%;
   top: 0;
   bottom: 0;
   left: 0;
