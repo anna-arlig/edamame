@@ -1,23 +1,20 @@
 import React from 'react'
-import { SafeAreaView, ScrollView } from 'react-native'
 import Header from './components/Header'
-import colors from './constants/colors'
 import HomeScreen from './screens/HomeScreen'
 import { NavigationContainer } from '@react-navigation/native'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import RecipeScreen from './screens/RecipeScreen'
+
+const Stack = createNativeStackNavigator()
 
 function App(): JSX.Element {
-  const backgroundStyle = {
-    backgroundColor: colors.primary.background_beige,
-  }
-
   return (
     <NavigationContainer>
-      <SafeAreaView style={backgroundStyle}>
-        <ScrollView contentInsetAdjustmentBehavior="automatic" style={backgroundStyle}>
-          <Header />
-          <HomeScreen></HomeScreen>
-        </ScrollView>
-      </SafeAreaView>
+      <Header />
+      <Stack.Navigator initialRouteName="Home" screenOptions={{ headerShown: false }}>
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Recipe" component={RecipeScreen} />
+      </Stack.Navigator>
     </NavigationContainer>
   )
 }
