@@ -3,6 +3,7 @@ import { SafeAreaView, ScrollView } from 'react-native'
 import Header from './components/Header'
 import colors from './constants/colors'
 import HomeScreen from './screens/HomeScreen'
+import { NavigationContainer } from '@react-navigation/native'
 
 function App(): JSX.Element {
   const backgroundStyle = {
@@ -10,12 +11,14 @@ function App(): JSX.Element {
   }
 
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <ScrollView contentInsetAdjustmentBehavior="automatic" style={backgroundStyle}>
-        <Header />
-        <HomeScreen></HomeScreen>
-      </ScrollView>
-    </SafeAreaView>
+    <NavigationContainer>
+      <SafeAreaView style={backgroundStyle}>
+        <ScrollView contentInsetAdjustmentBehavior="automatic" style={backgroundStyle}>
+          <Header />
+          <HomeScreen></HomeScreen>
+        </ScrollView>
+      </SafeAreaView>
+    </NavigationContainer>
   )
 }
 

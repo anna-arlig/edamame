@@ -9,6 +9,7 @@ export const RecipeCategoryContainer = styled.TouchableOpacity`
   position: relative;
   justify-content: flex-end;
   margin: 7px;
+  margin-bottom: 15px;
 `
 
 export const Background = styled.ImageBackground`
