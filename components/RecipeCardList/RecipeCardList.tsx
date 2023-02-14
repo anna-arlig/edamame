@@ -1,22 +1,21 @@
-import React, { FC } from 'react'
+import React, { FC, useEffect } from 'react'
 import * as S from './styled'
-import { Recipe, useRecipes } from '../../hooks/useRecipes'
+import { useRandomRecipes } from '../../hooks/useRandomRecipes'
+import RecipeCard from '../RecipeCard/RecipeCard'
+import { ScrollView } from 'react-native'
 
-type Props = {
-  recipe: Recipe
-}
-
-const RecipeCard: FC<Props> = () => {
-  const { randomRecipes } = useRecipes()
-  console.log(randomRecipes)
+const RecipeCardList: FC = () => {
+  const { randomRecipes } = useRandomRecipes()
 
   return (
     <S.RecipeListContainer>
-      {randomRecipes.map(recipe => (
-        <RecipeCard recipe={recipe}></RecipeCard>
-      ))}
+      <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+        {randomRecipes.map(recipe => (
+          <RecipeCard recipe={recipe} key={recipe.recipeName}></RecipeCard>
+        ))}
+      </ScrollView>
     </S.RecipeListContainer>
   )
 }
 
-export default RecipeCard
+export default RecipeCardList
