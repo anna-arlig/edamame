@@ -1,7 +1,7 @@
 import styled from 'styled-components/native'
 import colors from '../../constants/colors';
 
-export const RecipeCardContainer = styled.TouchableOpacity`
+export const RecipeCategoryContainer = styled.TouchableOpacity`
   background-color: ${colors.primary.white};
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);;
   height: 174px;
@@ -21,7 +21,7 @@ export const Background = styled.ImageBackground`
   right: 0;
 `
 
-export const RecipeCardTitleContainer = styled.View`
+export const RecipeCategoryTitleContainer = styled.View`
 height: 49px;
 justify-content: center;
 align-items: center;

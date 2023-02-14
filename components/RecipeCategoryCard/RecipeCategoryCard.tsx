@@ -3,16 +3,21 @@ import * as S from './styled'
 import { RecipeCategoryTitle } from '../../constants/typography'
 import { useSingleRecipe } from '../../hooks/useSingleRecipe'
 
-const RecipeCard: FC = () => {
-  const { recipe } = useSingleRecipe('Dinner')
+type Props = {
+  mealType: string
+}
+
+const RecipeCategoryCard: FC<Props> = ({ mealType }) => {
+  const { recipe } = useSingleRecipe(mealType)
+
   return (
-    <S.RecipeCardContainer>
+    <S.RecipeCategoryContainer>
       <S.Background source={{ uri: `${recipe.imgSmall}` }} />
-      <S.RecipeCardTitleContainer>
+      <S.RecipeCategoryTitleContainer>
         <RecipeCategoryTitle numberOfLines={2}>{recipe.mealType}</RecipeCategoryTitle>
-      </S.RecipeCardTitleContainer>
-    </S.RecipeCardContainer>
+      </S.RecipeCategoryTitleContainer>
+    </S.RecipeCategoryContainer>
   )
 }
 
-export default RecipeCard
+export default RecipeCategoryCard

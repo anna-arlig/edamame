@@ -3,6 +3,7 @@ import Spacer from 'react-styled-spacer/dist/Spacer'
 import RecipeCardList from '.././components/RecipeCardList/RecipeCardList'
 import RecipeCategoryCard from '.././components/RecipeCategoryCard/RecipeCategoryCard'
 import { Body, Headline } from '.././constants/typography'
+import RecipeCategoryList from '../components/RecipeCategoryList/RecipeCategoryList'
 import * as S from './styled'
 
 const HomeScreen: FC = () => {
@@ -20,8 +21,7 @@ const HomeScreen: FC = () => {
         Fancy brunch or breakfast for dinner? We got you covered!
       </Body>
       <Spacer h={10} />
-      <RecipeCategoryCard />
-      <RecipeCategoryCard />
+      <RecipeCategoryList />
     </S.HomeContainer>
   )
 }
