@@ -1,19 +1,18 @@
 import styled from 'styled-components/native'
 import colors from '../constants/colors'
 
-export const HomeContainer = styled.ScrollView`
+export const HomeContainer = styled.View``
 
-`
-
-export const RecipeContainer = styled.ScrollView`
-
+export const RecipeContainer = styled.View`
+background-color: ${colors.primary.background_beige};
+height: 100%;
 `
 
 export const TitleContainer = styled.View`
-height: 49px;
-padding: 5px;
 justify-content: center;
 align-items: center;
+margin-top: -20px;
+padding-bottom: 15px;
 `
 
 export const Background = styled.ImageBackground`
@@ -23,4 +22,9 @@ export const Background = styled.ImageBackground`
   bottom: 0;
   left: 0;
   right: 0;
+`
+export const ChipContainer = styled.View`
+justify-content: flex-start;
+flex-direction: row;
+transform: translateY(-50px);
 `
