@@ -5,7 +5,9 @@ Mock code test from Redmind
 
 Your task is to create an app that showcases recipes from this from the Edamam API
 https://api.edamam.com/api/recipes/v2
+
 https://developer.edamam.com/edamam-docs-recipe-api
+
 In the app you should showcase the recipes, and if the user presses a recipe the user should be navigated to another page with details about it:
 Name of the dish
 Ingredients
