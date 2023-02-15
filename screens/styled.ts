@@ -9,8 +9,6 @@ height: 100%;
 `
 
 export const TitleContainer = styled.View`
-justify-content: center;
-align-items: center;
 margin-top: -20px;
 padding-bottom: 15px;
 `
