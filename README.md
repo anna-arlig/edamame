@@ -1,6 +1,8 @@
 # edamame
 Mock code test from Redmind
 
+Figma: https://www.figma.com/file/YolfPG3eYe36VHZdFmclrw/Edamame?node-id=0%3A1&t=AWKzo8G3OtDlmNMk-0
+
 ## Instructions
 
 Your task is to create an app that showcases recipes from this from the Edamam API
