@@ -6,7 +6,7 @@ type Props = {
   content: string
 }
 
-const Fab: FC<Props> = ({ content }) => {
+const Chip: FC<Props> = ({ content }) => {
   return (
     <S.ChipContainer>
       <ChipTitle>{content}</ChipTitle>
@@ -14,4 +14,4 @@ const Fab: FC<Props> = ({ content }) => {
   )
 }
 
-export default Fab
+export default Chip
